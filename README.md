@@ -7,7 +7,7 @@ This is an unofficial and partial implementation of [FastNeRF](https://arxiv.org
 * Training and Caching of the FastNeRF model.
 * Rendering at around 30FPS for 800 x 800 images.
 
-### Differences from paper
+### Differences from the paper
 * We don't implement the BVH Raytracing to determine nearest and furthest intersection point. Instead, we use a simple raymarching, which maybe the main speed bottleneck for this implementation.
 * We save the cache by dense indices and sparse data, instead of an octree, for simplicity.
 
@@ -20,9 +20,9 @@ This is an unofficial and partial implementation of [FastNeRF](https://arxiv.org
 
 
 ### Install
-* fastnerf
+* `fastnerf`:
   Please follow [nerf_pl](https://github.com/kwea123/nerf_pl), by installing the required packages in `fastnerf/requirements.txt`.
-* pyqtgraph
+* `pyqtgraph`:
   Please follow [pyqtgraph](https://github.com/pyqtgraph/pyqtgraph), we use the latest 0.12.1, which requires Python3.7+ and Qt5.12-5.15.
   However, if your python environment is not matching, you can clone pyqtgraph's source code and place it under `renderer/pyqtgraph`, since we only use the Qt & OpenGL bindings.
 
@@ -51,8 +51,10 @@ For example, after caching the data,
 cd renderer
 python qt_renderer_sparse_firekeeper.py
 ```
+
 It will create a window like:
 ![example_renderer](assets/renderer.png)
+
 You can control the camera by your mouse (rotate = drag by the left button, scale = wheel, pan = drag by the middle button).
 
 
