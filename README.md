@@ -8,7 +8,7 @@ This is an unofficial and partial implementation of [FastNeRF](https://arxiv.org
 * Rendering at around 30FPS for 800 x 800 images.
 
 ### Differences from the paper
-* We don't implement the BVH Raytracing to determine nearest and furthest intersection point. Instead, we use a simple raymarching, which maybe the main speed bottleneck for this implementation.
+* We don't implement the BVH Raytracing to determine the nearest/furthest intersection point. Instead, we use a simple raymarching, which maybe the main speed bottleneck for this implementation.
 * We save the cache by dense indices and sparse data, instead of an octree, for simplicity.
 
 
@@ -49,8 +49,10 @@ This is done in a jupyter notebook (since it needs manual modifying of lots of p
 For example, after caching the data,
 ```bash
 cd renderer
+# The parameters should keep the same as the caching parameters.
 python qt_renderer_sparse_firekeeper.py
 ```
+
 
 It will create a window like:
 ![example_renderer](assets/renderer.png)
@@ -59,5 +61,7 @@ You can control the camera by your mouse (rotate = drag by the left button, scal
 
 
 ### Datasets
-To be continued...
+We tested on two datasets: `silica` and `firekeeper`.
+* `silica`: Please refer to [the original release](https://github.com/kwea123/nerf_pl/releases/tag/v2.0.1).
+* `firekeeper`: To be continued...
 
