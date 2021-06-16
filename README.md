@@ -53,9 +53,9 @@ cd renderer
 python qt_renderer_sparse_firekeeper.py
 ```
 
-
 It will create a window like:
-![example_renderer](assets/renderer.png)
+
+![example_gif](assets/example.gif)
 
 You can control the camera by your mouse (rotate = drag by the left button, scale = wheel, pan = drag by the middle button).
 
