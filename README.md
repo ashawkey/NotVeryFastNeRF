@@ -63,5 +63,5 @@ You can control the camera by your mouse (rotate = drag by the left button, scal
 ### Datasets
 We tested on two datasets: `silica` and `firekeeper`.
 * `silica`: Please refer to [the original release](https://github.com/kwea123/nerf_pl/releases/tag/v2.0.1).
-* `firekeeper`: To be continued...
+* `firekeeper`: [google drive](https://drive.google.com/drive/folders/1n_NOUzOsI8qwbBWYBi86q7he1PLxpthp?usp=sharing)
 
